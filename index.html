@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buzer Ride</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Buzer Ride</h1>
+    </header>
+    <main>
+        <section class="ride-booking-form">
+            <h2>Book Your Ride</h2>
+            <form id="bookingForm">
+                <label for="pickup">Pick-Up Location:</label>
+                <input type="text" id="pickup" name="pickup" required>
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+                <button type="button" onclick="listRides()">Book Now</button>
+            </form>
+        </section>
+        <section id="availableRides" class="ride-list">
+            <!-- Rides will be displayed here -->
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
